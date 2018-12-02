@@ -1,0 +1,127 @@
+﻿html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fefefe;
+}
+
+.field-validation-error,
+.validation-summary-errors {
+    color: #dc3545;
+}
+
+.input-validation-error,
+.input-validation-error > .k-picker-wrap {
+    border-color: #dc3545 !important;
+}
+
+.field-validation-error,
+.validation-summary-errors {
+    text-align: left !important;
+}
+
+.k-form-inline .k-form-field > .field-validation-error {
+    align-self: flex-start !important;
+    padding-left: 1rem !important;
+}
+
+.k-form-inline .k-form-field > label:not(.k-checkbox-label):not(.k-radio-label),
+.k-form-inline .k-form-field > span:not(.k-widget) {
+    align-self: flex-start !important;
+}
+
+.k-form, .k-form-inline {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 2rem;
+}
+
+    .k-form .k-form-field,
+    .k-form-inline .k-form-field {
+        display: block;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+
+        .k-form .k-form-field,
+        .k-form .k-form-field:last-child,
+        .k-form-inline .k-form-field,
+        .k-form-inline .k-form-field:last-child {
+            margin-bottom: 1rem;
+        }
+
+    .k-form .k-widget:not(.k-calendar),
+    .k-form input,
+    .k-form label:not(.k-checkbox-label):not(.k-radio-label) {
+        display: block;
+    }
+
+    .k-form .k-form-field > input {
+        width: 100%;
+    }
+
+    .k-form-inline .k-form-field {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+        .k-form-inline .k-form-field > label:not(.k-checkbox-label):not(.k-radio-label),
+        .k-form-inline .k-form-field > span:not(.k-widget) {
+            width: 25%;
+            text-align: right;
+            line-height: 1.5;
+            padding: calc(.5rem + 1px) 0;
+            padding-right: 1.5rem;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        }
+
+        .k-form-inline .k-form-field > label:not(.k-checkbox-label):not(.k-radio-label),
+        .k-form-inline .k-form-field > span:not(.k-widget) {
+            padding: calc(.5rem + -1px) 0;
+            padding-right: 1rem;
+        }
+
+    .k-form-inline:not(form) .k-form-field > label:not(.k-checkbox-label):not(.k-radio-label), .k-form-inline:not(form) .k-form-field > span:not(.k-widget) {
+        padding: 0;
+        padding-right: 1rem;
+    }
+
+    .k-form-inline .k-form-field > input {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+
+.k-form-field > .k-button {
+    margin-right: 1rem;
+}
+
+.k-form-field > label:not(.k-checkbox-label):not(.k-radio-label),
+.k-form-field > span:not(.k-widget) {
+    margin-bottom: 0;
+}
+
+.k-sprite.k-icon {
+    font-size: 16px;
+}
+
+    .k-sprite.k-icon:before {
+        margin: auto;
+        width: 1em;
+        height: 1em;
+        line-height: 1;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+.k-icon, .k-tool-icon {
+    position: relative;
+}

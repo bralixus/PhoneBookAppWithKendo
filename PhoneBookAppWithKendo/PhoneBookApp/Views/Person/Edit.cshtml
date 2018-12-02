@@ -1,0 +1,19 @@
+﻿
+@model PhoneBookApp.Models.PersonModel
+@using (Html.BeginForm("Edit", "Person", FormMethod.Post))
+{
+    <dir><h3>Edycja wpisu</h3></dir>
+    @Html.HiddenFor(x => x.ID)
+
+    <dir>@Html.Kendo().TextBoxFor(x => x.Name)</dir>
+    <dir>@Html.Kendo().TextBoxFor(x => x.LastName)</dir>
+   <dir>@Html.Kendo().TextBoxFor(x => x.Phone)</dir>
+ <dir>@Html.Kendo().TextBoxFor(x => x.Email)</dir>
+    
+    @Html.Kendo().Button().Name("btnSave").Content("Wyślij").Icon("save").HtmlAttributes(new {type = "submit", @class = "k-primary"})
+    <button>@Html.ActionLink("Anuluj", "Index")</button></dir>
+    
+
+}
+
+
