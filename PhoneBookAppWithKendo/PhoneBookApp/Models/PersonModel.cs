@@ -34,7 +34,7 @@ namespace PhoneBookApp.Models
         [Required(ErrorMessage = "Pole wymagane!"), StringLength(20, ErrorMessage = "Zbyt długi wpis!")]
         public string LastName { get; set; }
 
-        [Required(ErrorMessage = "Pole wymagane!"), Range(111111111,999999999, ErrorMessage = "Podaj 9 cyfr numeru telefonu")]
+        [Required(ErrorMessage = "Pole wymagane!"), Range(111111111, 999999999, ErrorMessage = "Podaj 9 cyfr numeru telefonu")]
         public int Phone { get; set; }
 
         [Required(ErrorMessage = "Pole wymagane!"), EmailAddress(ErrorMessage = "To nie jest poprawny format!")]

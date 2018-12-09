@@ -1,4 +1,5 @@
-﻿@using PhoneBookApp.Models
+﻿@using Kendo.Mvc
+@using PhoneBookApp.Models
 @model List<PhoneBookApp.Models.PersonModel>
 
 <dir><h1>PhoneBookApp</h1></dir>
@@ -32,13 +33,13 @@
         @foreach (var element in Model)
         {
             <tr>
-                <td style="background-color: whitesmoke">@Html.Kendo().TextBoxFor(x => element.ID)</td>
-                <td style="background-color: whitesmoke">@Html.Kendo().TextBoxFor(x => element.Name)</td>
-                <td style="background-color: whitesmoke">@Html.Kendo().TextBoxFor(x => element.LastName)</td>
-                <td style="background-color: whitesmoke">@Html.Kendo().TextBoxFor(x => element.Phone)</td>
-                <td style="background-color: whitesmoke">@Html.Kendo().TextBoxFor(x => element.Email)</td>
-                <td style="background-color: whitesmoke">@Html.Kendo().TextBoxFor(x => element.Created)</td>
-                <td style="background-color: whitesmoke">@Html.Kendo().TextBoxFor(x => element.Updated)</td>
+                <td>@Html.Kendo().TextBoxFor(x => element.ID)</td>
+                <td>@Html.Kendo().TextBoxFor(x => element.Name)</td>
+                <td>@Html.Kendo().TextBoxFor(x => element.LastName)</td>
+                <td>@Html.Kendo().TextBoxFor(x => element.Phone)</td>
+                <td>@Html.Kendo().TextBoxFor(x => element.Email)</td>
+                <td>@Html.Kendo().TextBoxFor(x => element.Created)</td>
+                <td>@Html.Kendo().TextBoxFor(x => element.Updated)</td>
                 <td><a href="@Url.Action("Edit")" class="k-button">Edytuj</a></td> 
                 <td><a href="@Url.Action("Remove")" class="k-button">Usuń</a></td> 
             </tr>

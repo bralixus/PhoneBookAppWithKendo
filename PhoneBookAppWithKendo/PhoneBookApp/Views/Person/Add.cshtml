@@ -4,17 +4,28 @@
 {
     @Html.HiddenFor(x => x.ID)
 
+    <div class="k-form-field">
+        <dir>@Html.Label("Imię")</dir>
+        <dir>@Html.Kendo().TextBoxFor(x => x.Name)</dir>
+    </div>
+    <div class="k-form-field">
+        <dir>@Html.Label("Nazwisko")</dir>
+        <dir>@Html.Kendo().TextBoxFor(x => x.LastName)</dir>
+    </div>
+    <div class="k-form-field">
+        <dir>@Html.Label("Numer Telefonu")</dir>
+        <dir>@Html.Kendo().NumericTextBoxFor(x => x.Phone)</dir>
+    </div>
+    <div class="k-form-field">
+        <dir>@Html.Label("Email")</dir>
+        <dir>@Html.Kendo().TextBoxFor(x => x.Email)</dir>
+    </div>
     
-    <dir>@Html.Kendo().TextBoxFor(x => x.Name)</dir>
-    <dir>@Html.Kendo().TextBoxFor(x => x.LastName)</dir>
-    <dir>@Html.Kendo().TextBoxFor(x => x.Phone)</dir>
-    <dir>@Html.Kendo().TextBoxFor(x => x.Email)</dir>
-
     @Html.HiddenFor(x => x.Created)
 
     @Html.HiddenFor(x => x.Updated)
 
 
-    @Html.Kendo().Button().Name("btnSave").Content("Wyślij").Icon("save").HtmlAttributes(new {type = "submit", @class = "k-primary"})
+    @Html.Kendo().Button().Name("btnSave").Content("Zapisz").Icon("save").HtmlAttributes(new {type = "submit", @class = "k-primary"})
 }
 
